@@ -1,0 +1,626 @@
+@font-face {
+	font-family: 'Conv_Legendum';
+	src: url('../resources/Legendum.eot');
+	src: url('../resources/Legendum.eot?#iefix') format('embedded-opentype'),
+         url('../resources/Legendum.woff') format('woff'),
+         url('../resources/Legendum.ttf') format('truetype'),
+         url('../resources/Legendum.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #FBFFEB;
+    font-family: 'Conv_Legendum', sans-serif;
+}
+
+#background_id {
+    background: url('../resources/Forest.jpg') center center no-repeat;
+background-size: 100% 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#view_id {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1004px;
+}
+
+
+
+a {
+    font-family: 'Conv_Legendum', sans-serif;
+}
+
+a:link {
+    color: #F6D59B;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F6D59B;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F6D59B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CBFCB0;
+    text-decoration: none;
+}
+
+
+
+img {
+    border: 0px;
+}
+
+
+
+h1 {
+    text-decoration: none;
+    margin-top: 0px;
+    font-family: 'Conv_Legendum', sans-serif;
+}
+
+h2 {
+    font-family: 'Conv_Legendum', sans-serif;
+    margin: 20px 0px 5px 0px;
+}
+
+
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+    table-layout: auto;
+    padding: 5px;
+    font-family: 'Conv_Legendum', sans-serif;
+    font-size: 14px;
+}
+
+table thead {
+}
+
+table tr {
+    text-align: left;
+    padding: 5px;
+}
+
+table tr:nth-child(odd) > td {background: rgba(118,142,26,0.9)}
+table tr:nth-child(even) > td {background: rgba(99,119,22,0.8)}
+
+table tr th {
+    font-family: 'Conv_Legendum', sans-serif;
+    font-weight: bold;
+}
+
+table tr td {
+    vertical-align: top;
+}
+
+.table_subheader_row {
+    color: #333;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+table tr td img {
+    vertical-align: middle;
+}
+
+.table_data_left_aligned {
+    text-align: left;
+}
+
+.table_data_center_aligned {
+    text-align: center;
+}
+
+.table_data_right_aligned {
+    text-align: right;
+}
+
+
+/*Header*/
+#header_id {
+    background-color: rgba(99,119,22,0.8);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+    position: relative;
+    margin-left: 210px;
+    padding: 10px;
+}
+
+#header_inner_id {
+    display: table;
+    width: 100%;
+}
+
+#header_emblem_left_id {
+    display: table-cell;
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#header_emblem_left_id img {
+    max-height: 128px;
+    max-width: 128px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#header_text_id {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 128px;
+    padding: 0px 10px;
+}
+
+#header_text_id h1 {
+    color: #FBFFEB;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Conv_Legendum', sans-serif;
+    white-space: normal;
+}
+
+
+
+/*Menu*/
+#menu_id {
+}
+
+#menu_row_id {
+    display: block;
+    list-style: none;
+    color: rgba(255,255,255,0.8);
+    position: fixed;
+    width: 200px;
+    height: auto;
+    margin-right: -220px;
+    margin-top: 0px;
+    padding: 0;
+    font-size: 0px;
+    top: 10px;
+    box-shadow: 2px 0px 6px rgba(0,0,0,0.15);
+    background-color: rgba(128,128,42,0.8);
+}
+
+.menu_item {
+    margin: 0px;
+    margin-left: 0px;
+    font-size: 16px;
+}
+
+.menu_item a {
+    font-family: 'Conv_Legendum', sans-serif;
+    padding: 10px;
+    display: block;
+    color: rgba(255,255,255,0.8);
+}
+
+.menu_item a:hover {
+    background: rgba(255,255,255,0.8);
+    color: rgba(128,128,42,0.8);
+}
+
+
+
+/*Content*/
+#content_id {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 210px;
+    padding: 10px;
+    background-color: rgba(99,119,22,0.8);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+    min-height: 640px;
+}
+
+
+
+.home_page .main_heading {
+    display: none;
+}
+
+
+
+/*Page subsections*/
+.page_subsection {
+    margin-top: 10px;
+    padding: 0px;
+    font-size: 14px;
+    overflow: auto;
+}
+
+.page_subsection h1 {
+    text-decoration: none;
+    font-family: 'Conv_Legendum', sans-serif;
+    margin-top: 0px;
+}
+
+.page_subsection h2 {
+    font-family: 'Conv_Legendum', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid #FBFFEB;
+}
+
+.subsectionHiddenForPrivacy {
+    margin: 5px;
+}
+
+
+
+/*List pages*/
+.person_list_page .main_heading {
+    display: none;
+}
+
+.person_list_page #paging_menu_row_id, .family_list_page #paging_menu_row_id {
+    text-align: center;
+    margin: 5px;
+}
+
+.person_list_page .paging_menu_item, .family_list_page .paging_menu_item {
+    list-style: none;
+    display: inline-block;
+    color: #F6D59B;
+}
+
+.person_list_page .paging_menu_item a, .family_list_page .paging_menu_item a {
+    color: #F6D59B;
+}
+
+.family_list_page .main_heading {
+    display: none;
+}
+
+.source_list_page .main_heading {
+    display: none;
+}
+
+
+
+/*Person page*/
+.person_page .main_heading img {
+    float: right;
+    max-height: 128px;
+    max-width: 128px;
+}
+
+.person_page .main_heading {
+    overflow: auto;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+#person_chart_canvas_id {
+    margin: 5px auto;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+
+/*Media subsection*/
+.media_subsection {
+    margin: 0px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.media_subsection h3 {
+    margin: 0px 0px 5px 0px;
+    padding: 1px;
+    overflow: auto;
+    font-family: 'Conv_Legendum', sans-serif;
+    font-size: 16px;
+}
+
+.media_subsection > div {
+    overflow: auto;
+}
+
+.media_div {
+    position: relative;
+    float: left;
+    width: 148px;
+    height: 150px;
+    padding: 0px;
+    margin-left: 2px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #FFF;
+    line-height: 148px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.media_div p {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    line-height: 16px;
+    margin: 0px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #EEE;
+    padding: 1px;
+    font-family: 'Conv_Legendum', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+    height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.media_div:hover p {
+    display: block;
+}
+
+
+.media_div img {
+    max-width: 128px;
+    max-height: 128px;
+    height: auto;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.media_div a {
+    display: block;
+    text-align: center;
+}
+
+.media_div a:hover {
+    background-color: #FFF;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*Homepage*/
+#home_page_links {
+    color: #FBFFEB;
+    text-align: left;
+    font-family: 'Conv_Legendum', sans-serif;
+    padding: 5px;
+}
+
+#home_page_creation_date_id {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FBFFEB;
+    font-family: 'Conv_Legendum', sans-serif;
+}
+
+#gedcom_file_id {
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#gedcom_file_id a {
+    display: inline-block;
+}
+
+#home_page_comment_id {
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#home_page_comment_id div {
+    padding: 5px;
+    font-family: 'Conv_Legendum', sans-serif;
+}
+
+#home_page_comment_id h2 {
+    font-family: 'Conv_Legendum', sans-serif;
+    margin-bottom: 10px;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid #FBFFEB;
+}
+
+
+
+/*Mediapage*/
+#media_view_subsection_id {
+    text-align: center;
+    margin: 10px;
+}
+
+#media_view_subsection_id a {
+    display: inline-block;
+}
+
+#media_view_subsection_id img {
+    display:block;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+#media_view_subsection_id object {
+    outline: none;
+}
+
+/*Contactpage*/
+.contact_page .page_subsection {
+    margin-top: 10px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+/*Chartpage*/
+#chart_view_subsection_id {
+    overflow: auto;
+    margin: 10px;
+}
+
+#chart_view_subsection_id img {
+    margin: 0px auto;
+    max-width: 500px;
+    display: block;
+}
+
+/*Statisticspage*/
+.statistics_page .page_subsection {
+    margin-top: 10px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statistics_page td {
+	width: 50%;
+}
+
+.statistics_page td:nth-child(2) {
+	text-align: center;
+}
+
+.statistics_page thead {
+    background-color: rgba(99,119,22,0.8);
+}
+
+.statistic_chart {
+    margin: 5px;
+}
+
+.statistic_chart h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FBFFEB;
+}
+
+.statistic_chart div {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.statistic_chart img {
+    display: block;
+    margin: 0px auto;
+}
+
+
+
+
+/*Footer*/
+#footer_id {
+    margin-top: 10px;
+    margin-left: 210px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+#footer_text_id {
+    color: #FBFFEB;
+    background-color: rgba(99,119,22,0.8);
+    text-align: center;
+    font-family: 'Conv_Legendum', sans-serif;
+    height: 45px;
+    vertical-align: middle;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+
+
+/*Language selection*/
+#language_id {
+    float: right;
+    width: 43px;
+}
+
+#language_id img {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+#language_id ul ul {
+	display: none;
+}
+
+#language_id ul li:hover > ul {
+    display: block;
+    background: rgba(99,119,22,0.8);
+}
+
+#language_id ul li:hover {
+    background: rgba(99,119,22,0.8);
+}
+
+#language_id ul {
+	background: rgba(99,119,22,0.8);
+    padding: 0px;
+    margin: 0px;
+	list-style: none;
+}
+
+#language_id > ul > li {
+    background: rgba(99,119,22,0.8);
+	float: left;
+    position: relative;
+    margin-left: 1px;
+}
+
+#language_id ul li a:hover {
+    color: #CBFCB0;
+}
+
+#language_id ul li a {
+    display: block;
+    text-decoration: none;
+    width: 42px;
+    height: 45px;
+    line-height: 42px;
+    text-align: center;
+}
+
+#language_id ul li {
+    display: block;
+    text-decoration: none;
+    width: 42px;
+    height: 45px;
+    line-height: 42px;
+    text-align: center;
+}
+
+#language_id ul ul {
+    padding: 0;
+	position: absolute;
+    bottom: 100%;
+}
+
+#language_id ul ul li {
+    float: none;
+    border-bottom: 1px solid {%PageBackgroundColor%};
+}
+
+/*Markers*/
+.not_exported {
+    color: #999;
+}
