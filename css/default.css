@@ -23,7 +23,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: #090909;
+    color: #000000;
     background-color: #ABEAF7;
     background-image: url('../resources/WaterBackground.jpg');
     background-repeat:repeat-x;
@@ -47,7 +47,7 @@ body {
 }
 
 a {
-    color: #090909;
+    color: #000000;
 }
 
 a:link {
